@@ -2,13 +2,28 @@
 <html>
 <head>
   <title>Tew</title>
-  <%= stylesheet_link_tag    "application" %>
+  <!--[if lt IE 8]><%= stylesheet_link_tag "ie", :media => "screen, projection" %><![endif]--> 
+  
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+<div class="container">
+   <div class="span-24 last">
+      Cabecera
+   </div>
+   <div class="span-16">
+      Cuerpo izquierda
+	  <%= yield %>
+   </div>
+   <div class="span-8 last">
+      Lateral derecha
+   </div>
+   <div class="span-24 last">
+      Pie
+   </div>
+</div> 
 
 </body>
 </html>

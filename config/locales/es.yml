@@ -1,0 +1,11 @@
+# Sample localization file for Spanish
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  meta:
+    description: "Web de cursos online de GEA"
+    keywords: "Cursos online, Formación virtual, Gestión de la educación Autónoma"
+  title:
+    web: "GEA Formación"
+  web:
+    name: "GEA Formación"

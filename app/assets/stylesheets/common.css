@@ -1,0 +1,41 @@
+/*************Basic SECTION ********************/
+* {	margin: 0;	padding: 0;	font-family: Arial; }
+html, body {height: 100%;}
+.p {	margin: 0px;	padding: 0px;	font-size: inherit;	font-family: inherit;	font-weight: inherit;
+      text-align: inherit;	color: inherit;	line-height: inherit;	vertical-align: top;}
+p {	padding-top: 0px;	margin-top: 0px;}
+img {	border: 0px;}
+div {	margin: 0px;	padding: 0px;	font-family: Helvetica;	font-size: 11px;}
+a:link,a:visited {	color: inherit;	text-decoration: inherit;}
+a:hover {	text-decoration: underline;}
+.clearfloat {	clear: both;	height: 0px;}
+h2{padding-left:10px;}
+
+
+/******* Main Structure SECTION***************************/
+body{font-size:1.0em;  color:#2A3890;  background-color:#ffffff; }
+#wrapper { 	background-color: #f5f5f5;	width: 100%; margin: 0px auto;	  }
+#wrapper_body{min-height: 552px;	width: 960px; margin:0px auto;	margin-left: auto;	margin-right: auto;
+margin-top: auto; margin-bottom:auto;}
+
+/*********** Notices SECTION *********************/
+.notice, .success, .alert, .error, .validation, #error_explanation {
+    border: 1px solid;
+    margin: 10px 0px;
+    padding:15px 10px 15px 40px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.notice ul, .success ul, .alert ul, .error ul, .validation ul{
+  margin-left:40px;
+  
+}
+label.validation_error{color: #D8000C;background-color: #FFBABA;border: 1px solid;
+                       display: block;padding-left:5px;padding-right:5px;width:90%;}
+.notice {border-color:#BDC7D8; color: #1F4A75;background-color: #DEEFF8;background-image: url('btn/info.png');}
+.success {color: #4F8A10;background-color: #DFF2BF;background-image:url('btn/success.png');}
+.alert {color: #9F6000;background-color: #FEEFB3;background-image: url('btn/warning.png');}
+.error, #error_explanation {color: #D8000C;background-color: #FFBABA;background-image: url('btn/error.png');}

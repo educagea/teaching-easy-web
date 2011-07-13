@@ -1,0 +1,6 @@
+Task list to do in the future:
+
+- Test the print view of the page
+- Check compatibility with older browsers and maybe use ie.css from a css framework to adapt the layout
+- Check meta tags to positioning in search engines
+- See what file host_meta.xml.builder is (it is in views->frontpage)

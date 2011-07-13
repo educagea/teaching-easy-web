@@ -1,0 +1,47 @@
+<!-- HTML5 DOCTYPE -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title><%= yield(:title).empty? ? t('title.web') : yield(:title)%></title>
+    <meta name="keywords" content="<%= yield(:keywords).empty? ? t('meta.keywords') : yield(:keywords) %>" >
+    <meta name="description" content= "<%= yield(:description).empty? ? t('meta.description') : yield(:description) %>" >
+	
+    <%= stylesheet_link_tag "frontpage","common", "header", "footer", :media => "screen, projection" %>
+    <%= stylesheet_link_tag "print", :media => "print" %>
+    <%= javascript_include_tag 'jquery', 'jquery.livequery' %>
+    <%= favicon_link_tag "icons/favicon.ico" %>
+
+    <% if protect_against_forgery? %>
+      <%= csrf_meta_tag %>
+    <% end %>
+	
+    <script type="text/javascript" >
+	    $(document).ready(function() {
+	      <%= yield :javascript%>
+	    });
+    </script>
+	
+    <%= yield :headers %>
+  </head>
+  
+  <body>
+  	
+    <div id="wrapper">
+      <header>
+        <%= render :partial => "frontpage/header" %>
+      </header>
+      <section>
+        <div id="flash">
+          <%= render :partial => "layouts/flash", :locals => {:flash => flash} %>
+        </div>
+        <div id="wrapper_body">
+          <%= yield %>
+        </div>
+      </section>
+      <footer>
+        <%= render :partial => "layouts/footer" %>
+      </footer>
+    </div>
+  </body>
+</html>

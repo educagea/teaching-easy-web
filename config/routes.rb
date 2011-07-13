@@ -1,8 +1,4 @@
 Tew::Application.routes.draw do
-  get "say/hello"
-
-  get "say/goodbye"
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -52,7 +48,7 @@ Tew::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'say#hello'
+  root :to => "frontpage#index"
 
   # See how all your routes lay out with "rake routes"
 
