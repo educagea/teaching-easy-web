@@ -1,16 +1,12 @@
-<div id="footerFront">
-	<div id="footer">
-    <div class="rowfooter">
-      <%= link_to(image_tag('HTML5.png'), 'http://validator.w3.org/check?uri=referer') %>
-      <%= link_to(image_tag('HTML5_Styling.png'),'http://jigsaw.w3.org/css-validator/check/referer') %>
-      <%= link_to(image_tag('HTML5_Semantics.png'),'http://jigsaw.w3.org/css-validator/check/referer') %>
-    </div>
-	  <ul>
-		<li>2011 © </li>
-		<li id="trade_mark"><%= link_to t('web.name'), 'http://gea-formacion.com' %></li>
-	  </ul>
-	</div>
+<div id="footer">
+	
+  <ul>
+  	<li id="trade_mark"><img alt="Bola_global_peque" class="icon" src="/images/bola_global_peque.png?1307606955"><%=t('web.name')%></li>
+	<li>-</li>
+	<li><%=t("footer.rights")%></li>
+	<li>-</li>
+	<li><a href="/aviso_legal" target="_blank"><%=t("footer.legal_notice")%></a></li>
+	<li>-</li>
+	<li><a href="/feedback/new" id="feedback_link"><%=t("footer.feedback")%></a></li>
+  </ul>
 </div>
-
-
-

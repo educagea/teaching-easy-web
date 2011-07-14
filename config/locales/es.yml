@@ -2,6 +2,16 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
+  footer:
+    feedback: "Envianos comentarios"
+    legal_notice: "Aviso legal"
+    rights: "Todos los derechos reservados"
+  frontpage:
+    tabs:      
+      contact: "Contacto"
+      courses: "Cursos"
+      home: "Inicio"
+      homologations: "Homologaciones"
   meta:
     description: "Web de cursos online de GEA"
     keywords: "Cursos online, Formación virtual, Gestión de la educación Autónoma"

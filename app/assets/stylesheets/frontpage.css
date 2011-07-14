@@ -1,63 +1,56 @@
-/**************MENU***********/
-#toolbar {
-  border-bottom-color:#889944;
-  border-bottom-style:none;
-  border-bottom-width:1px;
-  border-left-color:#889944;
-  border-left-style:solid;
-  border-left-width:1px;
-  border-right-color:#889944;
-  border-right-style:solid;
-  border-right-width:1px;
-  border-top-color:#889944;
-  border-top-style:solid;
-  border-top-width:1px;
-  margin-bottom:10px;
-  width:200px;
+#full_content {
+  background-color: #8FBC8F;
 }
 
-#toolbar li {
-  width: 200px;
-  height: 32px;
-}
-
-#toolbar ul{
-  overflow: hidden;
-}
-
-#toolbar li a {
-  height:24px;
-  text-decoration:none;
-}
-
-#toolbar li a:hover {
-	color: #FFF;
-	background:  url(menu1.gif) 0 -32px;
-	padding: 8px 0 0 10px;
-}	
-
-#toolbar li a:link, #toolbar li a:visited {
-  background-attachment:initial;
-  background-clip:initial;
-  background-color:initial;
-  background-image:url('sidebar-link.gif');
-  background-origin:initial;
-  background-position:initial initial;
-  background-repeat:initial initial;
-  color:#889944;
-  display:block;
-  padding-bottom:0;
-  padding-left:25px;
-  padding-right:0;
-  padding-top:8px;
-}
-
-.page_content {
-  width: 720px;
+#page_content {
+  width: 750px;
   min-height: 550px;
   position: absolute;
   padding-left: 5px;
   top: 0px;
-  left: 215px; 
+  left: 200px; 
+z-index: 10;
+background-color: white;
+border-left: 1px solid #DDD;
+border-top: 0px solid #DDD;
+border-bottom: 1px solid #CCC;
+border-right: 1px solid #CCC;
+margin-bottom: 40px;
+}
+
+#left-side{
+	background-color: #F2F5F7;
+	width:200px;
+}
+
+#section-tabs {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+#section-tabs li a {
+color: #4B7092;
+display: block;
+font-size: 14px;
+padding: 5px 0 5px 25px;
+border-bottom: 1px solid #D0D0D0;
+text-shadow: 1px 2px 3px #CBCBCB;
+}
+
+#section-tabs li a:hover, #section-tabs li a:focus {
+background-color: #DEE2E4;
+z-index: 0;
+position: static;
+text-decoration: none;
+}
+
+#section-tabs li.selected {
+	position: relative;
+background-color: white;
+margin-right: -1px;
+position: relative;
+z-index: 11;
+font-size: 20px;
 }
 
