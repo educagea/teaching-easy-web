@@ -7,7 +7,7 @@
     <meta name="keywords" content="<%= yield(:keywords).empty? ? t('meta.keywords') : yield(:keywords) %>" >
     <meta name="description" content= "<%= yield(:description).empty? ? t('meta.description') : yield(:description) %>" >
 	
-    <%= stylesheet_link_tag "frontpage","common", "header", "footer", :media => "screen, projection" %>
+    <%= stylesheet_link_tag "common", "header", "footer", "frontpage", :media => "screen, projection" %>
     <%= stylesheet_link_tag "print", :media => "print" %>
     <%= javascript_include_tag 'jquery', 'jquery.livequery' %>
     <%= favicon_link_tag "icons/favicon.ico" %>

@@ -1,0 +1,63 @@
+/**************MENU***********/
+#toolbar {
+  border-bottom-color:#889944;
+  border-bottom-style:none;
+  border-bottom-width:1px;
+  border-left-color:#889944;
+  border-left-style:solid;
+  border-left-width:1px;
+  border-right-color:#889944;
+  border-right-style:solid;
+  border-right-width:1px;
+  border-top-color:#889944;
+  border-top-style:solid;
+  border-top-width:1px;
+  margin-bottom:10px;
+  width:200px;
+}
+
+#toolbar li {
+  width: 200px;
+  height: 32px;
+}
+
+#toolbar ul{
+  overflow: hidden;
+}
+
+#toolbar li a {
+  height:24px;
+  text-decoration:none;
+}
+
+#toolbar li a:hover {
+	color: #FFF;
+	background:  url(menu1.gif) 0 -32px;
+	padding: 8px 0 0 10px;
+}	
+
+#toolbar li a:link, #toolbar li a:visited {
+  background-attachment:initial;
+  background-clip:initial;
+  background-color:initial;
+  background-image:url('sidebar-link.gif');
+  background-origin:initial;
+  background-position:initial initial;
+  background-repeat:initial initial;
+  color:#889944;
+  display:block;
+  padding-bottom:0;
+  padding-left:25px;
+  padding-right:0;
+  padding-top:8px;
+}
+
+.page_content {
+  width: 720px;
+  min-height: 550px;
+  position: absolute;
+  padding-left: 5px;
+  top: 0px;
+  left: 215px; 
+}
+

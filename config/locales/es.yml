@@ -5,6 +5,8 @@ en:
   meta:
     description: "Web de cursos online de GEA"
     keywords: "Cursos online, Formación virtual, Gestión de la educación Autónoma"
+  logo:
+    alt: "GEA Formación"
   title:
     web: "GEA Formación"
   web:
